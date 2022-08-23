@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{setspace}
+%\setstretch{2}
+
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true, %set true if you want colored links
+	linktoc=all,     %set to all if you want both sections and subsections linked
+	linkcolor=blue,  %choose some color if you want links to stand out
+	citecolor=red,
+}
+\usepackage{geometry}  
+\geometry{letterpaper}      
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{appendix}
+\usepackage{tikz}
+\usepackage[numbers]{natbib}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\brown}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\yellow}[1]{\textcolor{yellow}{#1}}
+\usepackage{booktabs}   % professional-quality tables
+\usepackage{multirow}
+\usepackage{scrextend}
+\usetikzlibrary{positioning}% To get more advances positioning options
+\usetikzlibrary{arrows}% To get more arrow heads
+\newtheorem{remark}{Remark}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{proposition}{Proposition}[section] 
+\newtheorem{property}{Property}[section]
+\newtheorem{properties}{Properties}[section]
+\newtheorem{assumption}{Assumption}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{example}{Example}[section]
+\newenvironment{proof}{{\noindent\it Proof}\quad}{\hfill $\square$\par} 
+\numberwithin{figure}{section}
+\numberwithin{equation}{section}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{bm}
+
+\title{Shale Gas Literature Review}{
+\date{}
+\author{Boqian Shen}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Notes}
+\subsection{Boqian Shen}
+\input{boqianshen}
+
+
+
+%\section*{References}
+\bibliographystyle{plain}
+\bibliography{ref}
+\end{document}

@@ -1,0 +1,60 @@
+# **Flow Mechanism of Shale Gas**
+
+- Material’s Properties
+    - Permeabilit is alwasy relatively low, less than 1 md.
+    - The stresssensitive parameters, including organic richness, porosity, thickness and lateral extent, can vary significantly with in situ stress changes.
+- **Adsorption/Desorption Mechanism**
+    - There are three states of has reserved in shale reservoir: free gas, adsorbed gas(main state 20-80%) and dissolved gas.
+    - With the decrease in pressure, adsorbed gas sill become free gas in the early period of exploitation.
+    - methane adsorption
+    - adsorption capacity (TOC total organic carbon, shale contains high orgnic matter→ high gas adsorption)
+    - gas adsorption process can be described by various isotherm models: Langmuir’s type model (simplest and effective), Freundlich-type model, Langmuir–Freundlich-type model, D-R-type model, BET-type model and Toth-type models.
+    - Multi-component adsorption mechanisms,composition of varieties of hydrocarbons (C2+) and subsequently high total organic content
+    (TOC)
+- **Flow Mechanisms of Gas Transport in Shale Gas Reservoir**
+    - Flow Regime
+        - pore size ranging from macroscale (>1mm) to nanoscale (<100 nm)
+        - Kn → flow regime → governing equation+boundary condition
+    - Based on the Knudsen numbers (Kn), the flow mechanism can be classified as two categories:
+        - molecular dynamics for shale gas transportation: adsorption, diffusion, displacement and other mechanisms
+        - lattice Boltzmann method : slippage, Knudsen diffusion, and apparent permeability correction(to improve Darcy’s law where matrix with low velocities and freactures with high velocities.
+        - Apparent Permeability Correction
+        - Improved Darcy Model in Fractures
+
+# **Reservoir Models (reservoir-scale Gas flow  simulation)**
+
+- Flow model
+    - porous media: inter-particle and intra-particle(organic matter pores within kerogen and mineral particles) pores
+    - Kerogen is the place gas adsorbs on the wall and dissolves within it
+    - Gas is considered as wetting phase
+    - Four types of organic matter: hydraulic fractures, natural fractures,
+    kerogen (organic matrix) and inorganic matter, with the derease in pore size
+    - Another classification: organic porosity, inorganic porosity, natural fractures and hydraulic fractures
+    - single porosity for shale gas simulation: Multiple interacting continua (MINC) and explicit fracture modeling
+    - for different pore sizes such as dual porosity model, connection between nanopores and micropores in organic matter has to be considered: Darcy’s law (limited, low permeability) and Fickian diffusion should be considered
+- FlowModel Coupled with Geomechanics
+    - A popular trend is to use geomechanism with flow model for gas production simulation, otherwise the production will be overestimated, since the production is sensitive to fracture aperture changes
+    - pressure, deformation
+    - linear elasticity, nonlinear elasticity(for better estimation on permeability)
+
+# **Numerical Approaches**
+
+- Finite Difference Method (FDM)
+    
+    efficiency and simplicity, with rectangular and triangular grid, uniform and non-uniform meshes, cartesian and curvilinear coordinates, 1D to 3D.  Firoozabadi 1999
+    
+- Finite Element Method (FEM)
+    
+    more arrutate, unstructured meshes (fracture)
+    
+    Multiscale mixed finte element (MsMFE) method 
+    
+    The main process is to make this method as geometrically flexible as possible and developing coarsening strategies that semiautomatically adapt to barriers, channels, faults and wells in a way that ensures good accuracy for a chosen level of coarsening.
+    
+    AMG
+    
+- Finite Volume method FVM
+    
+    more easily implemented with unstructured grids
+    
+- Fast marching method (FMM)
